@@ -1,19 +1,16 @@
 package day_1;
 
 import helpers.TextFile;
-
-import javax.script.ScriptEngine;
-import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
 import java.util.ArrayList;
 
 public class ChronalCalibration {
-    private TextFile textFile;
+    private final TextFile textFile;
 
     private static final int START_FREQ = 0;
 
     private int freq;
-    private ArrayList<Integer> frequencies = new ArrayList<Integer>();
+    private final ArrayList<Integer> frequencies = new ArrayList<Integer>();
 
     public ChronalCalibration() throws ScriptException {
 
@@ -46,7 +43,7 @@ public class ChronalCalibration {
         return false;
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         try {
             new ChronalCalibration();
         } catch (ScriptException e) {
